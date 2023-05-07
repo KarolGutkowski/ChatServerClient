@@ -1,9 +1,13 @@
 <h1>ChatServerClient</h1> 
 
-<p>This is an example client for my ChatAppServer.</br>
-App allows users to communicate by messages through the server.</br>
-The process of receiveing messages is asynchronous so that client isn't interrupted by incoming messages or doesnt have to put messages in ceratin order.
+<h3>Quick summary</h3>
+<ul>
+  <li>This chat app client is part of my chatapp project and serves as example client for chatting service</li>
+  <li>Client can connect and disconnect at any time</li>
+  <li>The recieval of messages is asynchrous so it doesnt disturb users experience and allows to send/receive at any time</li>
+</ul>
 
+</p>
 How to test it for yourself ?
 <ul>
   <li>Create MS SQL database called ChatAppDB or change the connection string in App.config of server
