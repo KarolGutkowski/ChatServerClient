@@ -32,6 +32,7 @@ namespace ChatServerClient // Note: actual namespace depends on the project name
             } while (!accessGained);
 
             Console.Clear();
+            Console.WriteLine("Chat room:");
             string ? toSend = string.Empty;
             ChatManager chatManager = new(client);
             var task = new Task(() => chatManager.ReadMessage());
@@ -39,8 +40,6 @@ namespace ChatServerClient // Note: actual namespace depends on the project name
             while (toSend != "quit()")
             {
                 StringBuilder message = new();
-                message.Append(userName);
-                message.Append(": ");
                 toSend = Console.ReadLine();
                 message.Append(toSend);
                 if (toSend is null) break;
